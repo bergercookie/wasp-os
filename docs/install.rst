@@ -439,6 +439,7 @@ To install the main firmware using nRF Connect for Android:
 * Ensure the watch is running in :ref:`OTA update mode<OTA update mode>`.
 * Connect to the device (e.g. *PineDFU* if you have a PineTime) using
   nRFConnect, click the DFU button and send ``micropython.zip`` to the device.
+  Use the `Distribution packet (ZIP)` file type when asked.
 * When the upload is complete the watch will reboot and launch the digital
   clock application.
 
@@ -486,17 +487,17 @@ installation and boot problems.
 OTA update mode
 ~~~~~~~~~~~~~~~
 
-Bootloader mode is entered automatically of the boot image is invalid or if the
+Bootloader mode is entered automatically if the boot image is invalid or if the
 watchdog fires when running in another operating mode. OTA update mode can also
-be can also be entered manually by holding a physical button on the device for
-five seconds until the boot logo re-appears. When running in OTA update
-mode pressing the physical button will attempt to launch the application.
+be entered manually by holding a physical button on the device for five seconds
+until the boot logo re-appears. When running in OTA update mode pressing the
+physical button will attempt to launch the application.
 
 .. note::
 
-    To remain in OTA update mode it is import to release the button as
-    soon as the boot logo appears otherwise you may acidentally request
-    the bootloader restart the application!
+    To remain in OTA update mode it is important to release the button as soon
+    as the boot logo appears otherwise you may acidentally request the
+    bootloader restart the application!
 
 When the bootloader starts it will display a boot logo for two seconds and will
 then either boot the application or enter OTA update mode. OTA update mode
